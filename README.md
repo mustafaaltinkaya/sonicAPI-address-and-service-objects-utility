@@ -17,9 +17,13 @@ Author: Mustafa Altinkaya
 - Don't forget to add a comma at the end of each line, except the last one
 
 aoList = [
+
     ["UPDATE", AddressObjectClass(aoName="ao-test1", aoZone="LAN", aoType="host", aoIPaddress="200.200.200.111")],
+    
     ["ADD", AddressObjectClass(aoName="ao-test2", aoZone="LAN", aoType="range", aoIPaddressStart="200.200.200.100", aoIPaddressEnd="200.200.200.200")],
+    
     ["DELETE", AddressObjectClass(aoName="ao-test3", aoZone="LAN", aoType="fqdn", aoDomain="api.google.com")]
+    
 ]
 
 **Service Objects**
@@ -31,7 +35,11 @@ aoList = [
 - Don't forget to add a comma at the end of each line, except the last one
 
 soList = [
+
     ["ADD", ServiceObjectClass(soName="so-test1", soType="tcp", soPortStart=8121, soPortEnd=8121)],
+    
     ["UPDATE", ServiceObjectClass(soName="so-test2", soType="udp", soPortStart=4433, soPortEnd=4433)],
+    
     ["DELETE", ServiceObjectClass(soName="so-test3", soType="tcp", soPortStart=8080, soPortEnd=8080)]
+    
 ]
