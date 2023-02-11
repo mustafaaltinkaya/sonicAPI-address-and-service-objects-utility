@@ -8,6 +8,15 @@ Author: Mustafa Altinkaya
 
 - It facilitates to ADD, UPDATE, DELETE Address Objects and Service Objects
 
+**Firewall Config Pre-Conditions**
+- Authentication is based on "RFC-2617 HTTP Basic Authentication"
+
+- This authentication method needs to be enabled on the firewall
+
+- The respective interface associated to the IP address also needs to have HTTPS user access enabled
+
+- The user must be a member of SonicWall Administrator group
+
 **Address Objects**
 
 - The available operations are UPDATE, ADD, DELETE
